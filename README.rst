@@ -31,6 +31,12 @@ will return something like::
 
     Visit  V00783001001:  1 dithers,  2 groups,  14 observation statements. Uses ['NIRISS Internal Flat']
 
+
+Example visit files
+-------------------
+Since JWST .vst files are marked as `not public` they cannot be included in this repository. Please download the directory at TBD to your local machine and set the VISIT_PARSER_TEST_DATA environment variable to the location of that folder, e.g. `export VISIT_PARSER_TEST_DATA=your/path`. This will allow you to run the tests and the examples locally.
+
+
 Contributing
 ------------
 

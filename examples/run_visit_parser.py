@@ -9,8 +9,6 @@ Authors
 import glob
 import os
 
-import astropy.units as u
-
 from visitparser.tests.test_parser import environment_variable
 from visitparser.parser import parse_visit_file
 
@@ -19,9 +17,10 @@ if environment_variable.args[0] is False:
     test_data_dir = os.environ['VISIT_PARSER_TEST_DATA']
     try:
         import pysiaf
+        import astropy.units as u
         check_siaf_update = True
     except ImportError:
-        print('pysiaf not available, skipping.')
+        print('pysiaf and/or astropy not available, skipping.')
         check_siaf_update = False
     write_niriss_reports = True
 else:
