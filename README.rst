@@ -24,9 +24,12 @@ Example usage
 
 Code::
 
-    from astropy.time import Time
-    from visitparser.edb_interface import query_single_mnemonic
+    from visitparser import parser
+    visitparser.parser.parse_visit_file('V00783001001.vst')
 
+will return something like::
+
+    Visit  V00783001001:  1 dithers,  2 groups,  14 observation statements. Uses ['NIRISS Internal Flat']
 
 Contributing
 ------------

@@ -11,8 +11,5 @@ Documentation for visitparser
 
   visitparser <visitparser/index.rst>
 
-.. note:: ``visitparser`` is a spin-off the ``jwql`` project.
-
-
 * :ref:`genindex`
 * :ref:`modindex`
