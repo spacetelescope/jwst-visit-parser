@@ -21,17 +21,21 @@ This package is being developed in a python 3.5 environment.
 
 How to install
 **************
-visitparser is available on `PyPI <https://pypi.org/project/visitparser/>`_ .
+visitparser is available via astroconda::
 
+   `conda install jwst-visit-parser`
 
-`pip install visitparser`
+Alternatively, you can clone the repository::
 
-Clone the repository:
-`git clone https://github.com/spacetelescope/jwst-dms-edb`
-Install visitparser:
-`cd visitparser`
-`python setup.py install` or
-`pip install .`
+   `git clone https://github.com/spacetelescope/jwst-dms-edb`
+
+and install visitparser like this::
+
+   `cd visitparser`
+   `python setup.py install`
+or::
+
+   `pip install .`
 
 
 

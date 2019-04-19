@@ -4,8 +4,9 @@ Python tools for parsing information from JWST visit files
 .. image:: https://travis-ci.com/spacetelescope/jwst-visit-parser.svg?branch=master
     :target: https://travis-ci.com/spacetelescope/jwst-visit-parser
 
-.. image:: https://badge.fury.io/py/visitparser.svg
-    :target: https://badge.fury.io/py/visitparser
+.. image:: https://readthedocs.org/projects/jwst-visit-parser/badge/?version=latest
+    :target: https://jwst-visit-parser.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
 
 .. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
     :target: http://www.astropy.org
@@ -14,9 +15,9 @@ Python tools for parsing information from JWST visit files
 
 Installation
 ------------
-From PyPi::
+From astroconda::
 
-    pip install visitparser
+    conda install jwst-visit-parser
 
 
 Example usage
@@ -35,6 +36,8 @@ will return something like::
 Example visit files
 -------------------
 Since JWST .vst files are marked as `not public` they cannot be included in this repository. Please download the directory at TBD to your local machine and set the VISIT_PARSER_TEST_DATA environment variable to the location of that folder, e.g. `export VISIT_PARSER_TEST_DATA=your/path`. This will allow you to run the tests and the examples locally.
+
+Some usage examples are included in `run_visit_parser.py <https://github.com/spacetelescope/jwst-visit-parser/blob/master/examples/run_visit_parser.py>`_
 
 
 Contributing
