@@ -11,21 +11,27 @@ import os
 
 import astropy.units as u
 
-from visit_parser import parse_visit_file
+from visitparser.tests.test_parser import environment_variable
+from visitparser.parser import parse_visit_file
 
+# check that test data directory is set
+if environment_variable.args[0] is False:
+    test_data_dir = os.environ['VISIT_PARSER_TEST_DATA']
+    try:
+        import pysiaf
+        check_siaf_update = True
+    except ImportError:
+        print('pysiaf not available, skipping.')
+        check_siaf_update = False
+    write_niriss_reports = True
+else:
+    check_siaf_update = False
+    write_niriss_reports = False
 
-local_dir = os.path.dirname(os.path.abspath(__file__))
-test_data_dir = os.path.join(local_dir, 'test_data')
-
-
-check_siaf_update = True
-write_niriss_reports = True
-# write_niriss_reports = False
 
 if check_siaf_update:
     # compare pointing information before and after SIAF update
     print('^' * 100)
-    import pysiaf
     siaf = pysiaf.Siaf('fgs')
     v2_0 = None
     v3_0 = None

@@ -1,8 +1,8 @@
 Python tools for parsing information from JWST visit files
 ----------------------------------------------------
 
-.. image:: https://travis-ci.org/spacetelescope/jwst-visit-parser.svg?branch=master
-    :target: https://travis-ci.org/spacetelescope/jwst-visit-parser
+.. image:: https://travis-ci.com/spacetelescope/jwst-visit-parser.svg?branch=master
+    :target: https://travis-ci.com/spacetelescope/jwst-visit-parser
 
 .. image:: https://badge.fury.io/py/visitparser.svg
     :target: https://badge.fury.io/py/visitparser
@@ -10,8 +10,6 @@ Python tools for parsing information from JWST visit files
 .. image:: http://img.shields.io/badge/powered%20by-AstroPy-orange.svg?style=flat
     :target: http://www.astropy.org
     :alt: Powered by Astropy Badge
-
-Python interface to the JWST DMS Engineering Database
 
 
 Installation

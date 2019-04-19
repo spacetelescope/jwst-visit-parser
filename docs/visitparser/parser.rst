@@ -1,7 +1,7 @@
-*************
-edb_interface
-*************
+******
+parser
+******
 
-.. automodule:: jwedb.edb_interface
+.. automodule:: visitparser.parser
     :members:
     :undoc-members:
