@@ -37,6 +37,8 @@ Example visit files
 -------------------
 Since JWST .vst files are marked as `not public` they cannot be included in this repository. Please download the directory at TBD to your local machine and set the VISIT_PARSER_TEST_DATA environment variable to the location of that folder, e.g. `export VISIT_PARSER_TEST_DATA=your/path`. This will allow you to run the tests and the examples locally.
 
+Examples of .vst files can also be accessed at https://outerspace.stsci.edu/display/OPGS/Observation+Plan+Generation+System#ObservationPlanGenerationSystem-OPProductsforReview
+
 Some usage examples are included in `run_visit_parser.py <https://github.com/spacetelescope/jwst-visit-parser/blob/master/examples/run_visit_parser.py>`_
 
 
