@@ -12,6 +12,8 @@ Python tools for parsing information from JWST visit files
     :target: http://www.astropy.org
     :alt: Powered by Astropy Badge
 
+.. image:: https://zenodo.org/badge/181723904.svg
+   :target: https://zenodo.org/badge/latestdoi/181723904
 
 Installation
 ------------
@@ -50,6 +52,11 @@ Contributing
 Please see the ``jwql`` contribution guide for how to contribute to visitparser:
 https://github.com/spacetelescope/jwql#software-contributions
 
+
+Citation
+--------
+
+If you find this package useful, please consider citing the Zenodo record using the DOI badge above.
 
 
 License
