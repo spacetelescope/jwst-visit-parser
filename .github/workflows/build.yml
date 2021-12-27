@@ -1,0 +1,59 @@
+name: build
+
+on:
+  push:
+  pull_request:
+
+env:
+  # USE UTF8 ENCODING. SHOULD BE DEFAULT, BUT THIS IS INSURANCE AGAINST FUTURE CHANGES
+  PYTHONIOENCODING: UTF8
+
+jobs:
+  build:
+    name: build
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-latest]
+    defaults:
+      run:
+        shell: bash -l {0}
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v2
+
+      - name: install conda
+        uses: conda-incubator/setup-miniconda@v2
+        with:
+          auto-update-conda: true
+          python-version: '3.8'
+          channels: http://ssb.stsci.edu/astroconda
+
+      - name: install dependencies
+        run: |
+          conda install astropy
+          conda install pytest
+          conda install sphinx
+          pip install flake8
+          pip install pytest-astropy
+          pip install sphinx_rtd_theme
+          pip install stsci_rtd_theme
+          pip install sphinx-automodapi
+
+      - name: run build
+        run: |
+          python setup.py install
+
+      - name: run tests
+        run: |
+          python setup.py test
+
+#      - name: build docs
+#        run: |
+#          python setup.py build_sphinx
+
+      - name: run linting
+        continue-on-error: true
+        run: |
+          flake8 --count visitparser
