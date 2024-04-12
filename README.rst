@@ -1,5 +1,9 @@
+This package is archived and no longer maintained
+---------------------------------------------------
+
+
 Python tools for parsing information from JWST visit files
-----------------------------------------------------
+----------------------------------------------------------
 
 .. image:: https://travis-ci.com/spacetelescope/jwst-visit-parser.svg?branch=master
     :target: https://travis-ci.com/spacetelescope/jwst-visit-parser
@@ -17,9 +21,7 @@ Python tools for parsing information from JWST visit files
 
 Installation
 ------------
-From astroconda::
-
-    conda install jwst-visit-parser
+Install from the repository
 
 
 Example usage
@@ -44,13 +46,6 @@ Examples of .vst files can also be accessed at https://outerspace.stsci.edu/disp
 Some usage examples are included in `run_visit_parser.py <https://github.com/spacetelescope/jwst-visit-parser/blob/master/examples/run_visit_parser.py>`_
 
 
-Contributing
-------------
-
-``visitparser`` is open source
-
-Please see the ``jwql`` contribution guide for how to contribute to visitparser:
-https://github.com/spacetelescope/jwql#software-contributions
 
 
 Citation
